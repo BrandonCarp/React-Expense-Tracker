@@ -13,6 +13,7 @@ function App() {
         return [expense, ...prevExpenses];
       });
     }
+    console.log(expense.date)
   };
 
   const removeExpenseHandler = (expenseId) => {

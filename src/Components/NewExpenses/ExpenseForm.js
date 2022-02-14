@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './ExpenseForm.css';
 
+
 const ExpenseForm = (props) => {
   const [purchaseType, setPurchaseType] = useState("Card");
   const [purchase, setPurchase] = useState("");
@@ -52,7 +53,7 @@ const ExpenseForm = (props) => {
   };
 
   return (
-    <div className="bg-white text-light form  d-flex flex-column align-items-center justify-content-center ms-1 mt-5">
+    <div className="text-light  ms-1 mt-5 form">
       <form onSubmit={formSubmit} className="">
         <h1 className="text-primary mb-2">Track Your Expenses</h1>
     
@@ -64,7 +65,7 @@ const ExpenseForm = (props) => {
           </select>
         </div>
 
-     <div className="d-flex mb-2">
+     <div className="d-flex mb-2 f1">
         <div className="me-2">
           <input className="" type="text" value={purchase} onChange={onSetPurchase} placeholder='Description' />
         </div>
